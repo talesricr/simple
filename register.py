@@ -17,6 +17,7 @@ class register:
     def register(self):
         self.username = input("Username: ")
         self.password = input("Password: ")
+        self.chek_size(self.username , self.password)
         self.token = self.register_encoder()
         self.save_register(self.token)
         msg = "Successful Register!"
@@ -40,6 +41,16 @@ class register:
         mydatabase.mydb.commit()
         logfile.close()
         cursor.close()
+
+    def chek_size(self, username, password):
+        if len(username) <= 4:
+            print("Your username must have as least 5 characters!")
+            self.register()
+        elif len(password) <= 4:
+            print("Your password must have as least 5 characters!")
+            self.register()
+        else:
+            return 0
 
     # def decoder(self):
         # print(new_username)
