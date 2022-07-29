@@ -5,15 +5,11 @@ class main:
             window = Tk()
 
             window.title("System")
-            texto = Label(window, text="Hello World")
-            texto.grid(column=0, row=0, padx=190, pady=100)
+            text = Label(window, text="Hello World")
+            text.grid(column=0, row=0, padx=190, pady=70)
 
-            botao = Button(window, text="Register")
-            botao.grid(column=0, row=1, padx=10, pady=10)
-
-            texto_resposta = Label(window, text="")
-            texto_resposta.grid(column=0, row=2, padx=10, pady=10)
-
+            button = Button(window, text="Register")
+            button.grid(column=0, row=1, padx=10, pady=10)
 
             window.mainloop()
 

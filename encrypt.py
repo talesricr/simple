@@ -9,4 +9,3 @@ class enigma:
         self.token.split('%x%')
         
         return self.token
-

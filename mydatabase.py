@@ -3,7 +3,6 @@ class conection:
 
     import mysql.connector
     import mysql
-    import pyodbc
 
     try:
       self.mydb = mysql.connector.connect(
