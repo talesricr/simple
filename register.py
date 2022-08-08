@@ -32,7 +32,7 @@ class register:
         return str(encoded_register)
 
     def save_register(self, token):
-        logfile = open ("log.txt" , "a")
+        logfile = open ("logs/log.txt" , "a")
         logfile.write("---New Register!---" + "\n")
         logfile.write(token + str(datetime.datetime.now().isoformat(timespec='seconds')) + "\n")
         cursor = mydatabase.mydb.cursor()

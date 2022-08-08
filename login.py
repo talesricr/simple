@@ -36,7 +36,7 @@ class login:
         cursor.close()        
 
     def sucess_login(self):
-        logfile = open ("log.txt" , "a")
+        logfile = open ("logs/log.txt" , "a")
         logfile.write("---New Session!---" + "\n")
         logfile.write(self.token + str(datetime.datetime.now().isoformat(timespec='seconds')) + "\n")
         logfile.close()
